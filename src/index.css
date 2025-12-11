@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+body {
+  background-color: #ffffff;
+  color: #111827; /* gray-900 */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar styles */
+.nav-link {
+  @apply relative py-1;
+}
+
+.nav-link.active {
+  @apply text-[#06236B] font-bold;
+}
+
+.brand-text {
+  @apply text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#06236B] to-[#0a3a9c] font-sans;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
